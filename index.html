@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="류주현 — Java & Spring Boot 기반 풀스택 개발자 포트폴리오. 백엔드부터 프론트엔드까지 아우르는 웹 개발 역량.">
+  <meta name="keywords" content="풀스택 개발자, Java, Spring Boot, 포트폴리오, 웹 개발">
+  <meta name="author" content="류주현">
+  <title>류주현 | Full-Stack Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Particle Background -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation — Code-style -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#home" class="nav-logo">&lt;<span class="hl-blue">RyuJuHyun</span><span class="hl-gray"> /</span>&gt;</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#expertise">Expertise</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-mobile-btn" id="mobileBtn" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================
+       Home / Hero Section
+       ============================ -->
+  <section class="hero section" id="home">
+    <div class="hero-content">
+      <h1 class="hero-name">RYU JUHYUN</h1>
+      <p class="hero-role">FULL-STACK DEVELOPER,<br>BACKEND ENGINEER & UI DESIGNER</p>
+    </div>
+    <a href="#expertise" class="scroll-indicator">
+      <div class="scroll-indicator-line"></div>
+    </a>
+  </section>
+
+  <!-- ============================
+       Expertise Section
+       ============================ -->
+  <section class="section" id="expertise">
+    <div class="container">
+      <h2 class="section-header fade-in">My Expertise</h2>
+
+      <div class="expertise-grid stagger-children">
+        <!-- Backend -->
+        <div class="expertise-card">
+          <div class="expertise-icon">⚙️</div>
+          <div class="expertise-top-label">Backend</div>
+          <h3 class="expertise-title">Software Development</h3>
+          <p class="expertise-body">
+            Java 기반의 Spring Boot 프레임워크를 활용한 서버 사이드 개발. OOP 개념(상속, 다형성)을 적극 활용하여 확장 가능한 백엔드 아키텍처를 설계합니다. MySQL을 이용한
+            데이터베이스 설계 및 관리.
+          </p>
+        </div>
+
+        <!-- Frontend -->
+        <div class="expertise-card">
+          <div class="expertise-icon">🎨</div>
+          <div class="expertise-top-label">Frontend</div>
+          <h3 class="expertise-title">UI/UX Development</h3>
+          <p class="expertise-body">
+            사용자 친화적인 웹 인터페이스 설계와 구현에 집중합니다. HTML5, CSS3, JavaScript를 활용한 반응형 디자인과 인터랙티브한 UI 컴포넌트를 제작합니다.
+          </p>
+        </div>
+
+        <!-- Tools -->
+        <div class="expertise-card">
+          <div class="expertise-icon">🛠️</div>
+          <div class="expertise-top-label">DevOps</div>
+          <h3 class="expertise-title">Tools & Workflow</h3>
+          <p class="expertise-body">
+            macOS 기반 개발 환경에서 IntelliJ IDEA와 Terminal을 활용한 효율적인 워크플로우. Git/GitHub를 통한 버전 관리와 팀 협업 브랜치 전략을 구축합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       Work / Project Section
+       ============================ -->
+  <section class="section" id="work">
+    <div class="container">
+      <h2 class="section-header fade-in">Work</h2>
+
+      <div class="project-card fade-in">
+        <div class="project-badge">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+          Team Project
+        </div>
+        <h3 class="project-title">🍚 한끼 (Hankki)</h3>
+        <p class="project-subtitle">"기획부터 UI 디자인, 기능 구현까지 아우른 Full-Stack 팀 프로젝트"</p>
+
+        <div class="project-meta">
+          <div class="project-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            2026.01 ~ 2026.03
+          </div>
+          <div class="project-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87" />
+              <path d="M16 3.13a4 4 0 010 7.75" />
+            </svg>
+            팀 프로젝트 (4인)
+          </div>
+          <div class="project-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Full-Stack
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-details">
+            <h3>담당 역할 및 기여</h3>
+            <div class="project-role-list">
+              <div class="project-role-item">
+                <div class="project-role-icon">🎨</div>
+                <div class="project-role-text">
+                  <strong>UI/UX 디자인 및 프론트엔드 구현</strong><br>
+                  사용자 친화적인 웹 인터페이스 기획 및 화면 레이아웃 설계, CSS/JS를 활용한 UI 컴포넌트 구현
+                </div>
+              </div>
+              <div class="project-role-item">
+                <div class="project-role-icon">🔗</div>
+                <div class="project-role-text">
+                  <strong>주요 기능 구현</strong><br>
+                  맛집 데이터 및 레시피 정보 연동, 개인화된 추천 기능을 백엔드와 프론트엔드 전반에 걸쳐 구현
+                </div>
+              </div>
+              <div class="project-role-item">
+                <div class="project-role-icon">🤝</div>
+                <div class="project-role-text">
+                  <strong>팀 협업 및 버전 관리</strong><br>
+                  Git/GitHub를 활용한 브랜치 전략으로 4인 팀원 간 코드 충돌 최소화 및 안정적 리포지토리 관리
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="project-screenshot">
+              <!-- 프로젝트 스크린샷: <img src="images/hankki.jpg" alt="한끼 스크린샷"> -->
+              <div class="project-screenshot-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+                <span>PROJECT SCREENSHOT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-tech-tags">
+          <span class="project-tech-tag">Spring Boot</span>
+          <span class="project-tech-tag">Java</span>
+          <span class="project-tech-tag">MySQL</span>
+          <span class="project-tech-tag">HTML5</span>
+          <span class="project-tech-tag">CSS3</span>
+          <span class="project-tech-tag">JavaScript</span>
+          <span class="project-tech-tag">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       About Section
+       ============================ -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-header fade-in">About Me</h2>
+
+      <div class="about-content fade-in">
+        <p>
+          안녕하세요! <strong>Java</strong>와 <strong>Spring Boot</strong>를 기반으로 한 백엔드 개발과
+          <strong>HTML/CSS/JavaScript</strong>를 활용한 프론트엔드 개발 역량을 갖춘 풀스택 개발자 <strong>류주현</strong>입니다.
+        </p>
+        <p>
+          객체지향 프로그래밍(OOP)의 핵심 개념을 활용하여 유지보수가 용이하고 확장 가능한 코드를 작성합니다.
+          팀 프로젝트를 통해 Git/GitHub 기반의 협업과 브랜치 전략을 체득하였으며,
+          기획부터 디자인, 구현까지 전 과정에 적극적으로 참여합니다.
+        </p>
+
+        <div class="about-info-grid">
+          <div class="about-info-item">
+            <div class="about-info-label">Name</div>
+            <div class="about-info-value">류주현</div>
+          </div>
+          <div class="about-info-item">
+            <div class="about-info-label">Role</div>
+            <div class="about-info-value">Full-Stack Dev</div>
+          </div>
+          <div class="about-info-item">
+            <div class="about-info-label">Stack</div>
+            <div class="about-info-value">Java · Spring</div>
+          </div>
+          <div class="about-info-item">
+            <div class="about-info-label">Tools</div>
+            <div class="about-info-value">IntelliJ · Git</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       Contact Section
+       ============================ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-header fade-in">Get In Touch</h2>
+
+      <div class="contact-content fade-in">
+        <p class="contact-text">
+          새로운 기회와 협업에 항상 열려 있습니다.<br>
+          궁금한 점이 있다면 언제든 연락해 주세요.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:example@email.com" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            example@email.com
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            GitHub
+          </a>
+          <a href="#" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            대한민국
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-copy">© 2026 <span>류주현</span> — All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="맨 위로 이동">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
