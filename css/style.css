@@ -507,6 +507,15 @@ img {
   gap: 8px;
 }
 
+.project-ts-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: var(--accent-blue);
+  line-height: 1.5;
+  font-family: var(--font-inter);
+}
+
 .project-details h3::before {
   content: '';
   width: 3px;
@@ -537,8 +546,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   margin-top: 2px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--accent-blue);
 }
 
 .project-role-text {

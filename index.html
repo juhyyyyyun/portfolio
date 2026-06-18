@@ -135,7 +135,7 @@
           </svg>
           Team Project
         </div>
-        <h3 class="project-title">🍚 한끼 (Hankki)</h3>
+        <h3 class="project-title">한끼 (Hankki)</h3>
         <p class="project-subtitle">"기획부터 UI 디자인, 기능 구현까지 아우른 Full-Stack 팀 프로젝트"</p>
 
         <div class="project-meta">
@@ -171,27 +171,37 @@
 
         <div class="project-content">
           <div class="project-details">
-            <h3>담당 역할 및 기여</h3>
+            <h3>Troubleshooting</h3>
+            <h4 class="project-ts-title">
+              [트러블 슈팅] DTO 패턴 도입을 통한 API 안정성 및 유지보수성 향상
+            </h4>
             <div class="project-role-list">
               <div class="project-role-item">
-                <div class="project-role-icon">🎨</div>
+                <div class="project-role-icon">S</div>
                 <div class="project-role-text">
-                  <strong>UI/UX 디자인 및 프론트엔드 구현</strong><br>
-                  사용자 친화적인 웹 인터페이스 기획 및 화면 레이아웃 설계, CSS/JS를 활용한 UI 컴포넌트 구현
+                  <strong>상황 (Situation)</strong><br>
+                  맛집/레시피 추천 API 구현 중, 데이터베이스 엔티티(Entity)를 클라이언트에 직접 반환하도록 설계함.
                 </div>
               </div>
               <div class="project-role-item">
-                <div class="project-role-icon">🔗</div>
+                <div class="project-role-icon">T</div>
                 <div class="project-role-text">
-                  <strong>주요 기능 구현</strong><br>
-                  맛집 데이터 및 레시피 정보 연동, 개인화된 추천 기능을 백엔드와 프론트엔드 전반에 걸쳐 구현
+                  <strong>문제 (Trouble)</strong><br>
+                  불필요한 DB 메타데이터 노출로 인한 보안 리스크, 엔티티 간 양방향 연관 관계로 인한 JSON 순환 참조 에러 발생, 화면 요구사항 변경 시 DB 구조까지 영향을 받는 높은 결합도 문제 직면.
                 </div>
               </div>
               <div class="project-role-item">
-                <div class="project-role-icon">🤝</div>
+                <div class="project-role-icon">A</div>
                 <div class="project-role-text">
-                  <strong>팀 협업 및 버전 관리</strong><br>
-                  Git/GitHub를 활용한 브랜치 전략으로 4인 팀원 간 코드 충돌 최소화 및 안정적 리포지토리 관리
+                  <strong>해행 (Action)</strong><br>
+                  엔티티와 UI 레이어의 관심사를 분리하기 위해 DTO(Data Transfer Object) 패턴을 전면 도입하고, 화면에 꼭 필요한 데이터만 정제하여 반환하도록 로직을 리팩토링함.
+                </div>
+              </div>
+              <div class="project-role-item">
+                <div class="project-role-icon">R</div>
+                <div class="project-role-text">
+                  <strong>결과 (Result)</strong><br>
+                  순환 참조 에러를 근본적으로 해결하여 서버 안정성을 확보했으며, API 데이터 크기 최적화 및 DB 스키마 변경에도 프론트엔드가 영향을 받지 않는 유연한 아키텍처 구축.
                 </div>
               </div>
             </div>
