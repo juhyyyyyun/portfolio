@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initBackToTop();
   initSmoothScroll();
+  initProjectVideoHover();
 });
 
 // ========================================
@@ -342,5 +343,27 @@ function initSmoothScroll() {
         });
       }
     });
+  });
+}
+
+// ========================================
+// Project Video Hover Control
+// ========================================
+function initProjectVideoHover() {
+  const video = document.getElementById('projectVideo');
+  if (!video) return;
+
+  const container = video.closest('.project-screenshot');
+  if (!container) return;
+
+  container.addEventListener('mouseenter', () => {
+    video.play().catch(err => {
+      console.log("Video play was prevented:", err);
+    });
+  });
+
+  container.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
   });
 }

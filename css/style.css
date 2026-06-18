@@ -565,10 +565,18 @@ img {
   aspect-ratio: 16 / 10;
 }
 
-.project-screenshot img {
+.project-screenshot img,
+.project-screenshot video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  transition: transform var(--transition-base);
+}
+
+.project-screenshot:hover img,
+.project-screenshot:hover video {
+  transform: scale(1.03);
 }
 
 .project-screenshot-placeholder {
