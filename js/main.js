@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackToTop();
   initSmoothScroll();
   initProjectVideoHover();
+  initProjectTabs();
 });
 
 // ========================================
@@ -365,5 +366,48 @@ function initProjectVideoHover() {
   container.addEventListener('mouseleave', () => {
     video.pause();
     video.currentTime = 0;
+  });
+}
+
+// ========================================
+// Project Tabs Control
+// ========================================
+function initProjectTabs() {
+  const tabs = document.querySelectorAll('.project-tab-btn');
+  const cards = document.querySelectorAll('.project-card[data-tab-content]');
+
+  if (tabs.length === 0 || cards.length === 0) return;
+
+  // Initialize: Add 'show' class to initially active card
+  cards.forEach(card => {
+    if (card.classList.contains('active')) {
+      card.classList.add('show');
+    }
+  });
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetTab = tab.getAttribute('data-tab');
+
+      // Update active tab button
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      // Switch cards
+      cards.forEach(card => {
+        const cardTab = card.getAttribute('data-tab-content');
+
+        if (cardTab === targetTab) {
+          card.classList.add('active');
+          // Add 'show' with a small delay to trigger CSS transition after display: block
+          setTimeout(() => {
+            card.classList.add('show');
+          }, 20);
+        } else {
+          card.classList.remove('show');
+          card.classList.remove('active');
+        }
+      });
+    });
   });
 }
